@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ee66aff1-afe7-4f7f-9969-85af47d5e388": {
+      "ProjectGuid": "ee66aff1-afe7-4f7f-9969-85af47d5e388",
+      "DisplayName": "tutorial project",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
