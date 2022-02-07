@@ -1,0 +1,15 @@
+F:\. net\assinments\Employee\obj\Debug\net6.0\Employee.csproj.AssemblyReference.cache
+F:\. net\assinments\Employee\obj\Debug\net6.0\Employee.GeneratedMSBuildEditorConfig.editorconfig
+F:\. net\assinments\Employee\obj\Debug\net6.0\Employee.AssemblyInfoInputs.cache
+F:\. net\assinments\Employee\obj\Debug\net6.0\Employee.AssemblyInfo.cs
+F:\. net\assinments\Employee\obj\Debug\net6.0\Employee.csproj.CoreCompileInputs.cache
+F:\. net\assinments\Employee\bin\Debug\net6.0\Employee.exe
+F:\. net\assinments\Employee\bin\Debug\net6.0\Employee.deps.json
+F:\. net\assinments\Employee\bin\Debug\net6.0\Employee.runtimeconfig.json
+F:\. net\assinments\Employee\bin\Debug\net6.0\Employee.dll
+F:\. net\assinments\Employee\bin\Debug\net6.0\ref\Employee.dll
+F:\. net\assinments\Employee\bin\Debug\net6.0\Employee.pdb
+F:\. net\assinments\Employee\obj\Debug\net6.0\Employee.dll
+F:\. net\assinments\Employee\obj\Debug\net6.0\ref\Employee.dll
+F:\. net\assinments\Employee\obj\Debug\net6.0\Employee.pdb
+F:\. net\assinments\Employee\obj\Debug\net6.0\Employee.genruntimeconfig.cache
