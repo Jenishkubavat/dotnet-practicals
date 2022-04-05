@@ -22,12 +22,12 @@ namespace Indexers
             get => temps[index];
             set => temps[index] = value;
         }
-    }*/
+    }
 
-
+    */
     //example 3
 
-    class DayCollection
+   /* class DayCollection
     {
         string[] days = { "Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat" };
 
@@ -48,5 +48,5 @@ namespace Indexers
                 nameof(day),
                 $"Day {day} is not supported.\nDay input must be in the form \"Sun\", \"Mon\", etc");
         }
-    }
+    }*/
 }

@@ -10,8 +10,6 @@ public class SimpleClassExample
 {
     public static void Main()
     {
-        const string name = "Jenish Kubavat";
-        Console.WriteLine($"name: {name},Time: {DateTime.Now.ToString("HH:mm:ss tt")}");
         Type t = typeof(SimpleClass);
         BindingFlags flags = BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public |
                              BindingFlags.NonPublic | BindingFlags.FlattenHierarchy;

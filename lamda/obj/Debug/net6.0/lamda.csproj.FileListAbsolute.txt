@@ -1,0 +1,15 @@
+F:\. net\assinments\lamda\bin\Debug\net6.0\lamda.exe
+F:\. net\assinments\lamda\bin\Debug\net6.0\lamda.deps.json
+F:\. net\assinments\lamda\bin\Debug\net6.0\lamda.runtimeconfig.json
+F:\. net\assinments\lamda\bin\Debug\net6.0\lamda.dll
+F:\. net\assinments\lamda\bin\Debug\net6.0\ref\lamda.dll
+F:\. net\assinments\lamda\bin\Debug\net6.0\lamda.pdb
+F:\. net\assinments\lamda\obj\Debug\net6.0\lamda.csproj.AssemblyReference.cache
+F:\. net\assinments\lamda\obj\Debug\net6.0\lamda.GeneratedMSBuildEditorConfig.editorconfig
+F:\. net\assinments\lamda\obj\Debug\net6.0\lamda.AssemblyInfoInputs.cache
+F:\. net\assinments\lamda\obj\Debug\net6.0\lamda.AssemblyInfo.cs
+F:\. net\assinments\lamda\obj\Debug\net6.0\lamda.csproj.CoreCompileInputs.cache
+F:\. net\assinments\lamda\obj\Debug\net6.0\lamda.dll
+F:\. net\assinments\lamda\obj\Debug\net6.0\ref\lamda.dll
+F:\. net\assinments\lamda\obj\Debug\net6.0\lamda.pdb
+F:\. net\assinments\lamda\obj\Debug\net6.0\lamda.genruntimeconfig.cache

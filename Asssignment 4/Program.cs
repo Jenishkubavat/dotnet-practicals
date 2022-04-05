@@ -3,7 +3,7 @@ using Properties;
 using Indexers;
 namespace MainProgram
 {
-    /*class Program
+   /* class Program
      {
         public static void Main()
          {
@@ -22,7 +22,7 @@ namespace MainProgram
      }*/
 
 
-    /*class Program
+   /* class Program
     {
         static void Main()
         {
@@ -44,8 +44,8 @@ namespace MainProgram
             Console.ReadKey();
         }
     }*/
-    /*
-    class Program
+    
+    /*class Program
     {
         static void Main()
         {
