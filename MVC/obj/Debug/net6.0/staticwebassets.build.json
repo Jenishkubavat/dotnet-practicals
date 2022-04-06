@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Fo2GpW7QB5ihWwC4CpplFX8SjKzxj0wVerOJ1f8il4g=",
+  "Hash": "HUaZSpK/4BAZdLxCtHAFHb7UWGo5Lxju6LcIeAQPMHs=",
   "Source": "MVC",
   "BasePath": "_content/MVC",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "F:\\. net\\assinments\\MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MVC.bundle.scp.css"
+    },
+    {
+      "Identity": "F:\\. net\\assinments\\MVC\\wwwroot\\css\\bootstrap.min.css",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\. net\\assinments\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "css/bootstrap.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
     },
     {
       "Identity": "F:\\. net\\assinments\\MVC\\wwwroot\\css\\site.css",

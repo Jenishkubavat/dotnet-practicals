@@ -1,32 +1,40 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MVC.Models;
 using MVC.Data;
 namespace MVC.Controllers;
 
 public class TeacherController : Controller
 {
-  
+
     private readonly ApplicationDBContext _Db;
-     public TeacherController(ApplicationDBContext db)
+    public TeacherController(ApplicationDBContext db)
+    {
+        _Db = db;
+    }
+
+    public async Task<IActionResult> Index(string searchString)
+    {
+        var teachers = from t in _Db.Teacher
+                       select t;
+        if (!String.IsNullOrEmpty(searchString))
         {
-            _Db = db;
+            teachers = teachers.Where(s => s.Teacher_Name!.Contains(searchString));
         }
 
-    public IActionResult Index()
-    {
-        IEnumerable<Teacher> listofTeacher =_Db.Teacher;
-        return View(listofTeacher);
+        return View(await teachers.ToListAsync());
+
     }
-        public IActionResult Create()
+    public IActionResult Create()
     {
         return View();
     }
- [HttpPost]
+    [HttpPost]
     [ValidateAntiForgeryToken]
     public IActionResult Create(Teacher obj)
     {
-       
+
         if (ModelState.IsValid)
         {
             _Db.Teacher.Add(obj);
@@ -34,25 +42,25 @@ public class TeacherController : Controller
             TempData["success"] = "Teacher created successfully";
             return RedirectToAction("Index");
         }
-        return View(obj);   
+        return View(obj);
     }
-[HttpGet]
-        public IActionResult Edit(int teacherid)
-        {
-            var subobj = _Db.Teacher.Find(teacherid);
-            return View(subobj);
+    [HttpGet]
+    public IActionResult Edit(int teacherid)
+    {
+        var subobj = _Db.Teacher.Find(teacherid);
+        return View(subobj);
 
-        }
+    }
 
-        [HttpPost]
-        public IActionResult Edit(Teacher updatedvaluesobj)
-        {
-            _Db.Teacher.Update(updatedvaluesobj);
-            _Db.SaveChanges();
-            return RedirectToAction("Index");
+    [HttpPost]
+    public IActionResult Edit(Teacher updatedvaluesobj)
+    {
+        _Db.Teacher.Update(updatedvaluesobj);
+        _Db.SaveChanges();
+        return RedirectToAction("Index");
 
-        }
-        [HttpGet]
+    }
+    [HttpGet]
     public IActionResult Delete(int? TeacherID)
     {
         if (TeacherID == null || TeacherID == 0)
@@ -60,7 +68,7 @@ public class TeacherController : Controller
             return NotFound();
         }
         var TeacherFromDb = _Db.Teacher.Find(TeacherID);
-        
+
 
         if (TeacherFromDb == null)
         {
@@ -71,21 +79,21 @@ public class TeacherController : Controller
     }
 
     //POST
-    [HttpPost,ActionName("Delete")]
+    [HttpPost, ActionName("Delete")]
     [ValidateAntiForgeryToken]
-     public IActionResult DeletePost(int ID)
+    public IActionResult DeletePost(int ID)
+    {
+        var teacherobj = _Db.Teacher.Find(ID);
+
+        if (ModelState.IsValid)
         {
-            var teacherobj = _Db.Teacher.Find(ID);
 
-            if (ModelState.IsValid)
-            {
-
-                _Db.Teacher.Remove(teacherobj);
-                _Db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(ID);
+            _Db.Teacher.Remove(teacherobj);
+            _Db.SaveChanges();
+            return RedirectToAction("Index");
         }
+        return View(ID);
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
