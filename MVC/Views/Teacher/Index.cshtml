@@ -30,11 +30,12 @@
             <tbody>
                 @foreach (var obj1 in Model)
                 {
-                    var date =obj1.JoiningDate.Date; 
                     <tr>
                         <td width="50%">@obj1.Teacher_Name</td>
                         <td>@obj1.subject</td>
-                        <td>@date</td>
+                        <td>@obj1.JoiningDate.Date
+                    
+                        </td>
                         <td>
                            <a asp-controller="Teacher" asp-action="Edit" asp-route-Teacherid="@obj1.ID" class="btn btn-primary">Edit</a>
                             <a asp-controller="Teacher" asp-action="Delete" asp-route-Teacherid="@obj1.ID" class="btn btn-primary">Delete</a>
